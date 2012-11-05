@@ -86,17 +86,6 @@
 
 #pragma mark -
 #pragma mark Facebook Methods
-// Pre iOS 4.2 support
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    NSLog(@"Pre iOS 4.2 support");
-    return [facebook handleOpenURL:url];
-}
-
-// For iOS 4.2+ support
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    NSLog(@"For iOS 4.2+ support ");
-    return [facebook handleOpenURL:url];
-}
 
 - (void)fbDidLogin {
     NSLog(@"fbDidLogin ");
